@@ -2,17 +2,23 @@
 
 **Author:** Irwin  
 **Created:** February 23, 2026  
-**Description:**  
+
+## Description
 ADML Host is the official environment for the ADML operator algebra.  
-This repository provides the documentation, substrate architecture, and future browser-based interpreter for ADML.
+This repository provides the documentation, substrate architecture, and the future browser-based interpreter for ADML.
+
+---
+
+## What is ADML Host?
+ADML Host is the home for a new minimal, structured language (ADML) designed for clarity, precision, and long-term stability.  
+This repository is where the system will grow, be documented, and eventually run inside a browser.
 
 ---
 
 ## Why this exists
-
-Modern systems are complex, fragile, and overloaded. 
-ADML takes the opposite approach: a minimal operator algebra that stays stable over decades.
-ADML Host is the environment where this system will grow, be documented, and eventually run.
+Modern systems are complex, fragile, and overloaded.  
+ADML takes the opposite approach: a minimal operator algebra that remains stable over decades.  
+ADML Host is the environment where this system is defined, explained, and executed.
 
 ---
 
@@ -23,7 +29,8 @@ It defines the structure, documentation, and execution environment for ADML-base
 ---
 
 ## Purpose
-ADML Host serves as the public-facing substrate for:
+ADML Host provides the foundation for:
+
 - ADML language specification  
 - ADML interpreter development  
 - Semantic substrate architecture  
@@ -36,7 +43,7 @@ ADML Host serves as the public-facing substrate for:
 - Provide a browser-based ADML interpreter  
 - Document the semantic substrate architecture  
 - Support MAGOS and micro-intelligence cell integration  
-- Maintain a clean, future-proof public reference
+- Maintain a clean, future-proof public reference  
 
 ---
 
