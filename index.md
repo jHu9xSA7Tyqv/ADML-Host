@@ -10,7 +10,7 @@ This site provides:
 - Examples and reference material
 
 ---
-<div align="right"> <img src="/assets/tmicon.png" width="60" alt="ADML TM Icon"></div>
+<div align="left"> <img src="/assets/tmicon.png" width="60" alt="ADML TM Icon"></div>
 ## ADML Interpreter (coming soon)
 
 A browser-based ADML interpreter will appear here in a future release.
