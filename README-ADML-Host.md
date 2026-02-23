@@ -8,12 +8,27 @@ This repository provides the documentation, substrate architecture, and future b
 
 ---
 
+## Project Description
+ADML Host is the public-facing substrate for the ADML operator algebra.  
+It defines the structure, documentation, and execution environment for ADML-based systems.
+
+---
+
 ## Purpose
 ADML Host serves as the public-facing substrate for:
 - ADML language specification  
 - ADML interpreter development  
 - Semantic substrate architecture  
 - Examples, demos, and reference implementations  
+
+---
+
+## Long-Term Vision
+- Establish ADML as a minimal, lawful operator algebra  
+- Provide a browser-based ADML interpreter  
+- Document the semantic substrate architecture  
+- Support MAGOS and micro-intelligence cell integration  
+- Maintain a clean, future-proof public reference
 
 ---
 
