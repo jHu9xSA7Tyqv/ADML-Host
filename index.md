@@ -10,7 +10,7 @@ This site provides:
 - Examples and reference material
 
 ---
-
+<div align="center"> <img src="/assets/tmicon.png" width="60" alt="ADML TM Icon"><br> A project stewarded by Irwin • 911ec.com </div>
 ## ADML Interpreter (coming soon)
 
 A browser-based ADML interpreter will appear here in a future release.
