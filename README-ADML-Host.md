@@ -8,6 +8,14 @@ This repository provides the documentation, substrate architecture, and future b
 
 ---
 
+## Why this exists
+
+Modern systems are complex, fragile, and overloaded. 
+ADML takes the opposite approach: a minimal operator algebra that stays stable over decades.
+ADML Host is the environment where this system will grow, be documented, and eventually run.
+
+---
+
 ## Project Description
 ADML Host is the public-facing substrate for the ADML operator algebra.  
 It defines the structure, documentation, and execution environment for ADML-based systems.
