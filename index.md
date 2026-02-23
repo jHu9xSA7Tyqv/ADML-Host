@@ -12,7 +12,7 @@ This site provides:
 ---
 
 <div align="left">
-  <img src="/assets/tmicon.png" width="60" alt="ADML TM Icon">
+  <img src="assets/tmicon.png" width="60" alt="ADML TM Icon">
 </div>
 
 ## ADML Interpreter (coming soon)
@@ -37,5 +37,5 @@ Documentation and interpreter modules will be added incrementally.
 ---
 
 <div align="center">
-A project stewarded by Irwin • 911ec.com
+<img src="assets/tmicon.png" width="60" alt="ADML TM Icon">A project stewarded by Irwin • 911ec.com
 </div>
