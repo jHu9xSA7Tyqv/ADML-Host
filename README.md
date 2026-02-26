@@ -1,4 +1,11 @@
-<div align="left"> <img src="assets/tmicon.png" width="60" alt="ADML TM Icon"></div>
+---
+layout: default
+title: ADML Host
+adml-identity: "adml-host"
+adml-concept: "root-environment"
+adml-relational-texture: "substrate:host; role:entrypoint"
+---
+
 # ADML Host
 
 **Author:** Irwin  

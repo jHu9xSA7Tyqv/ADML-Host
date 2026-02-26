@@ -1,3 +1,7 @@
+---
+layout: default
+title: ADML Host
+---
 # ADML Host
 
 Welcome to the official host environment for the ADML operator algebra.
@@ -17,25 +21,32 @@ This site provides:
 
 ## ADML Interpreter (coming soon)
 
-A browser-based ADML interpreter will appear here in a future release.
-It will allow you to write and execute ADML directly on this page.
+The ADML interpreter will illuminate identity through the **CIP → CIG → SIO** pipeline,  
+which defines the full semantic rendering process.
+
+This represents the first formal description of **semantic rendering** —  
+a rendering model that does *not* rely on binary computation, GPUs, or browser technologies.
+
+A browser-based interpreter will appear here in a future release,  
+allowing you to write and execute ADML directly on this page.
 
 ---
 
 ## What is ADML?
-ADML is a minimal operator algebra designed for clarity, precision, and long-term stability.
+
+ADML is a minimal operator algebra designed for clarity, precision, and long-term stability.  
+It provides a deterministic substrate for semantic computation and identity formation.
 
 ## What is ADML Host?
-ADML Host is the public-facing environment where ADML is documented, structured, and eventually executed in a browser.
+
+ADML Host is the public-facing environment where ADML is documented, structured,  
+and eventually executed through a browser-based interpreter.
 
 ---
 
 ## Status
+
 Initial scaffolding created.  
 Documentation and interpreter modules will be added incrementally.
 
 ---
-
-<div align="center">
-<img src="assets/tmicon.png" width="60" alt="ADML TM Icon">A project stewarded by Irwin • 911ec.com
-</div>

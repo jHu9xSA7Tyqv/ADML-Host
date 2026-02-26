@@ -1,0 +1,25 @@
+Directory Map for: W:\GitHub Desktop\Clones\ADML-Host
+Generated: 02/26/2026 12:01:08
+----------------------------------------
+
+FullName                                                                     Mode  Length   LastWriteTime
+--------                                                                     ----  ------   -------------
+W:\GitHub Desktop\Clones\ADML-Host\_layouts                                  d----          2/26/2026 8:36:46 AM
+W:\GitHub Desktop\Clones\ADML-Host\assets                                    d----          2/24/2026 10:43:35 AM
+W:\GitHub Desktop\Clones\ADML-Host\docs                                      d----          2/26/2026 12:01:08 PM
+W:\GitHub Desktop\Clones\ADML-Host\media                                     d----          2/26/2026 8:05:56 AM
+W:\GitHub Desktop\Clones\ADML-Host\CNAME                                     -a--- 24       2/26/2026 12:00:32 PM
+W:\GitHub Desktop\Clones\ADML-Host\index.md                                  -a--- 1392     2/26/2026 9:19:55 AM
+W:\GitHub Desktop\Clones\ADML-Host\LICENSE                                   -a--- 1090     2/24/2026 10:43:35 AM
+W:\GitHub Desktop\Clones\ADML-Host\README.md                                 -a--- 2093     2/26/2026 11:50:35 AM
+W:\GitHub Desktop\Clones\ADML-Host\assets\.keep                              -a--- 2        2/24/2026 10:43:35 AM
+W:\GitHub Desktop\Clones\ADML-Host\assets\tmicon.png                         -a--- 244077   2/24/2026 10:43:35 AM
+W:\GitHub Desktop\Clones\ADML-Host\docs\adml-host-map_022826c.txt            -a--- 2181     2/26/2026 11:55:46 AM
+W:\GitHub Desktop\Clones\ADML-Host\docs\adml-host-map_022826d.txt            -a--- 129      2/26/2026 12:01:08 PM
+W:\GitHub Desktop\Clones\ADML-Host\docs\concepts.md                          -a--- 11120    2/26/2026 10:21:33 AM
+W:\GitHub Desktop\Clones\ADML-Host\docs\dns-substrate-physics.md             -a--- 11594    2/26/2026 10:28:55 AM
+W:\GitHub Desktop\Clones\ADML-Host\docs\egret-satellite.md                   -a--- 3271     2/26/2026 9:20:20 AM
+W:\GitHub Desktop\Clones\ADML-Host\docs\mapping-files.ps1                    -a--- 1020     2/26/2026 11:58:41 AM
+W:\GitHub Desktop\Clones\ADML-Host\media\Mom-Pop_Swans_wh_Theme_080612_c.wmv -a--- 42831959 8/6/2012 1:16:00 PM
+W:\GitHub Desktop\Clones\ADML-Host\_layouts\default.html                     -a--- 5419     2/26/2026 11:52:35 AM
+

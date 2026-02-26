@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- ADML Identity Layer -->
+  <meta name="description" content="ADML Host — Semantic Substrate • CIP → CIG → SIO">
+  <meta name="author" content="Irwin Weisel ta-Construction Technology and for you Foundation">
+  <meta name="keywords" content="ADML, semantic rendering, CIP, CIG, SIO, substrate architecture">
+  <meta name="copyrights" content="copyright 2026">
+  <meta name="adml-concept" content="semantic-rendering; pipeline=LSP→CIP→CIG→SIO">
+
+  <!-- ADML Semantic Signature -->
+  <meta name="adml-identity" content="CIP→CIG→SIO; substrate=semantic; renderer=non-binary">
+
+  <!-- ADML Relational Texture Signature -->
+  <meta name="adml-relational-texture" content="iqttm:coherence=stable;propagation=deterministic;texture=canonical">
+
+  <!-- ADML DNS Layer Signature -->
+  <meta name="adml-dns-layer" content="relational-texture;semantic-identity">
+
+  <!-- Page title -->
+  <title>{{ page.title | default: "ADML Host" }}</title>
+
+  <!-- GitHub Pages default stylesheet -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  <!-- D: Sidebar Styles -->
+  <style>
+    #adml-shell {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 240px;
+      background: #fafafa;
+      border-left: 1px solid #ddd;
+      height: 100vh;
+      padding: 12px;
+      font-family: system-ui, sans-serif;
+      font-size: 0.85rem;
+      overflow-y: auto;
+      z-index: 9999;
+    }
+    #adml-shell h3 {
+      margin-top: 0;
+    }
+  </style>
+
+  <!-- B: Banner Styles -->
+  <style>
+    #adml-banner {
+      padding: 6px 12px;
+      font-size: 0.85rem;
+      background: #f3f3f3;
+      border-left: 4px solid #999;
+      margin-bottom: 12px;
+      font-family: system-ui, sans-serif;
+      display: none;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- D: Interpreter Sidebar -->
+  <div id="adml-shell">
+    <h3>Interpreter</h3>
+    <div id="adml-shell-identity"></div>
+    <div id="adml-shell-texture"></div>
+    <div id="adml-shell-concept"></div>
+    <hr>
+    <div id="adml-shell-related"></div>
+  </div>
+
+  <!-- B: Banner -->
+  <div id="adml-banner"></div>
+
+  <!-- Navigation Bar -->
+<nav style="background:#f5f5f5; padding:12px; border-bottom:1px solid #ddd;">
+  <div style="max-width:900px; margin:0 auto; display:flex; gap:20px; font-size:16px;">
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/README.html' | relative_url }}">ADML Host</a>
+    <a href="{{ '/docs/egret-satellite.html' | relative_url }}">Egret Satellite</a>
+    <a href="{{ '/docs/concepts.html' | relative_url }}">Concepts</a>
+    <a href="{{ '/docs/dns-substrate-physics.html' | relative_url }}">DNS Substrate Physics</a>
+  </div>
+</nav>
+
+
+  <!-- Page Content -->
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      {{ content }}
+    </div>
+  </main>
+
+  <!-- Unified Footer -->
+  <footer>
+    <div align="center" style="margin-top: 40px;">
+      <img src="{{ '/assets/tmicon.png' | relative_url }}" width="60" alt="ADML TM Icon"><br>
+      <em>ADML Host • A project stewarded by Irwin • 911ec.com • Copyrights year 2026</em>
+    </div>
+  </footer>
+
+  <!-- A: Metadata Reader -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const meta = name => {
+        const tag = document.querySelector(`meta[name="${name}"]`);
+        return tag ? tag.content : null;
+      };
+
+      window.ADML = {
+        identity: meta("adml-identity"),
+        texture: meta("adml-relational-texture"),
+        concept: meta("adml-concept"),
+        dnsLayer: meta("adml-dns-layer")
+      };
+
+      document.dispatchEvent(new CustomEvent("admlReady", { detail: window.ADML }));
+    });
+  </script>
+
+  <!-- B: Banner Logic -->
+  <script>
+    document.addEventListener("admlReady", e => {
+      const { identity, texture } = e.detail;
+      const banner = document.getElementById("adml-banner");
+
+      banner.innerText = `${identity || "Page"} • ${texture || "texture: default"}`;
+      banner.style.display = "block";
+    });
+  </script>
+
+  <!-- C: Navigation Logic -->
+  <script>
+    document.addEventListener("admlReady", e => {
+      const { identity, concept } = e.detail;
+
+      const links = [...document.querySelectorAll("a[href]")];
+      const related = links.filter(a =>
+        (identity && a.href.includes(identity)) ||
+        (concept && a.href.includes(concept))
+      );
+
+      const container = document.getElementById("adml-shell-related");
+      if (related.length > 0) {
+        container.innerHTML = "<strong>Related Pages</strong><ul>" +
+          related.map(a => `<li><a href="${a.href}">${a.innerText}</a></li>`).join("") +
+          "</ul>";
+      }
+    });
+  </script>
+
+  <!-- D: Sidebar Logic -->
+  <script>
+    document.addEventListener("admlReady", e => {
+      const { identity, texture, concept } = e.detail;
+
+      document.getElementById("adml-shell-identity").innerText =
+        `Identity: ${identity || "none"}`;
+
+      document.getElementById("adml-shell-texture").innerText =
+        `Texture: ${texture || "default"}`;
+
+      document.getElementById("adml-shell-concept").innerText =
+        `Concept: ${concept || "none"}`;
+    });
+  </script>
+
+</body>
+</html>
