@@ -5,6 +5,7 @@ export interface ADMLSubstrate {
     auth: string | null;
     texture: string | null;
     iqttm: string | null;
+    verbs: string | null;
     version: string | null;
     raw: string[]; // keep raw substrate for debugging or future layers
 }
@@ -19,23 +20,38 @@ export async function loadSubstrate(domain: string): Promise<ADMLSubstrate> {
 
     const data = await response.json();
 
-    // Extract raw TXT records exactly as Cloudflare returns them
-    const records: string[] = data.Answer
-        ? data.Answer.map((a: any) => a.data.replace(/"/g, ""))
-        : [];
+// Extract raw TXT records exactly as Cloudflare returns them
+const rawRecords: string[] = data.Answer
+    ? data.Answer.map((a: any) => a.data.replace(/"/g, ""))
+    : [];
 
-    // TEMPORARY: Confirm substrate ingestion in browser console
-    console.log("ADML substrate records (raw):", records);
+// Filter out non-substrate TXT records (SPF, DMARC, DKIM, MS verification, etc.)
+const records = rawRecords.filter(r => {
+    const lower = r.toLowerCase();
+    return (
+        lower.startsWith("adml-id:") ||
+        lower.startsWith("auth:") ||
+        lower.startsWith("texture:") ||
+        lower.startsWith("iqttm:") ||
+        lower.startsWith("verbs:") ||
+        lower.startsWith("v=") // version + note
+    );
+});
 
-    // Initialize structured substrate object
-    const substrate: ADMLSubstrate = {
-        admlId: null,
-        auth: null,
-        texture: null,
-        iqttm: null,
-        version: null,
-        raw: records
-    };
+// TEMPORARY: Confirm substrate ingestion in browser console
+console.log("ADML substrate records (raw):", records);
+
+// Initialize structured substrate object
+const substrate: ADMLSubstrate = {
+    admlId: null,
+    auth: null,
+    texture: null,
+    iqttm: null,
+    verbs: null,
+    version: null,
+    raw: records
+};
+
 
     // Normalize and parse each record
     for (const record of records) {

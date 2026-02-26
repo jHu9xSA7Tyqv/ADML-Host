@@ -7,9 +7,20 @@ export async function loadSubstrate(domain) {
     });
     const data = await response.json();
     // Extract raw TXT records exactly as Cloudflare returns them
-    const records = data.Answer
+    const rawRecords = data.Answer
         ? data.Answer.map((a) => a.data.replace(/"/g, ""))
         : [];
+    // Filter out non-substrate TXT records (SPF, DMARC, DKIM, MS verification, etc.)
+    const records = rawRecords.filter(r => {
+        const lower = r.toLowerCase();
+        return (lower.startsWith("adml-id:") ||
+            lower.startsWith("auth:") ||
+            lower.startsWith("texture:") ||
+            lower.startsWith("iqttm:") ||
+            lower.startsWith("verbs:") ||
+            lower.startsWith("v=") // version + note
+        );
+    });
     // TEMPORARY: Confirm substrate ingestion in browser console
     console.log("ADML substrate records (raw):", records);
     // Initialize structured substrate object
@@ -18,6 +29,7 @@ export async function loadSubstrate(domain) {
         auth: null,
         texture: null,
         iqttm: null,
+        verbs: null,
         version: null,
         raw: records
     };
