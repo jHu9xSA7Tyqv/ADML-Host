@@ -13,7 +13,7 @@ The **Egret Satellite** is not a satellite.
 It is a *metaphor* — a small, elegant physical build that reveals the mindset,  
 geometric intuition, and fabrication discipline behind much larger architectures.
 
-This page demonstrates how a simple 3D vortex sculpture, built on a robotic gantry,  
+This page demonstrates how a simple 3D vortex sculpture, built on a 3D CAD Quad Robotic Gantry,  
 encodes the same reasoning patterns required for advanced systems such as  
 semantic substrates, identity pipelines, and orbital architectures.
 
