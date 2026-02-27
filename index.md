@@ -1,7 +1,3 @@
----
-layout: default
-title: ADML Host
----
 # ADML Host
 
 Welcome to the official host environment for the ADML operator algebra.
