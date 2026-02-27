@@ -43,6 +43,11 @@ The full LSP → CIP → CIG → SIO pipeline is a semantic physics pipeline, no
 
 ---
 
+## The substrate adapts to ADML in return.  
+CIP and CIG organize themselves around the semantics ADML provides: identity grammar, operator boundaries, lawful transformations, coherence rules, and meaning constraints. The substrate becomes more structured because ADML supplies a semantic skeleton that spans every physics layer.
+
+---
+
 ## Long-Term Vision
 - Establish ADML as a minimal, lawful operator algebra  
 - Provide a browser-based ADML interpreter  
