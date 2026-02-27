@@ -19,53 +19,22 @@
   <!-- ADML DNS Layer Signature -->
   <meta name="adml-dns-layer" content="relational-texture;semantic-identity">
 
-  <!-- Page title -->
   <title>{{ page.title | default: "ADML Host" }}</title>
 
   <!-- Minima Theme Stylesheet -->
   <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
 
-  <!-- D: Sidebar Styles -->
-  <style>
-    #adml-shell {
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 240px;
-      background: #fafafa;
-      border-left: 1px solid #ddd;
-      height: 100vh;
-      padding: 12px;
-      font-family: system-ui, sans-serif;
-      font-size: 0.85rem;
-      overflow-y: auto;
-      z-index: 9999;
-    }
-    #adml-shell h3 {
-      margin-top: 0;
-    }
-  </style>
-
-  <!-- B: Banner Styles -->
-  <style>
-    #adml-banner {
-      padding: 6px 12px;
-      font-size: 0.85rem;
-      background: #f3f3f3;
-      border-left: 4px solid #999;
-      margin-bottom: 12px;
-      font-family: system-ui, sans-serif;
-      display: none;
-    }
-  </style>
-
+  <!-- Your custom styles follow -->
+  <style> … </style>
+  <style> … </style>
 </head>
+
 
 <body>
 
   <!-- D: Interpreter Sidebar -->
   <div id="adml-shell">
-    <h3>Interpreter</h3>
+    <h3>SIO Pipeline Interpreter</h3>
     <div id="adml-shell-identity"></div>
     <div id="adml-shell-texture"></div>
     <div id="adml-shell-concept"></div>
