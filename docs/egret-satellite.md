@@ -1,7 +1,3 @@
----
-layout: default
-title: Egret Satellite
----
 # Egret Satellite  
 *A metaphor for mindset, geometry, and architectural capability*
 
