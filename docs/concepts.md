@@ -1,8 +1,3 @@
----
-layout: default
-title: Semantic Rendering Concepts
----
-
 # Semantic Rendering Physics — Foundational Concepts  
 **Issued by:** Irwin  
 **Date:** 24 February 2026  
