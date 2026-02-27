@@ -1,11 +1,3 @@
----
-layout: default
-title: ADML Host
-adml-identity: "adml-host"
-adml-concept: "root-environment"
-adml-relational-texture: "substrate:host; role:entrypoint"
----
-
 # ADML Host
 
 **Author:** Irwin  
