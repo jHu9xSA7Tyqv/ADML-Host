@@ -1,9 +1,5 @@
----
-layout: default
-title: DNS Substrate Physics
----
-
 # DNS–Substrate Physics  
+
 **Issued by:** Irwin  
 **Date:** 26 February 2026  
 **Subject:** Relational‑Texture Metadata Across Internet DNS Layers
