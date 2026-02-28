@@ -1,3 +1,5 @@
+## Auth13 Substrate Physics
+
 ## Auth13 Summary
 
 Auth13 is the substrate‑native identity envelope for ADML. It derives identity from the object’s own geometric, illumination, and relational invariants rather than from browser constructs like DOM nodes, selectors, sessions, or tokens. The 13‑signal envelope remains stable across surfaces, devices, interpreters, and hosts, proving that identity in ADML is substrate‑anchored rather than surface‑assigned. Auth13 is the first demonstration that ADML operates with its own physics‑based identity fabric, independent of browser semantics or UI frameworks.
@@ -96,3 +98,4 @@ It is a substrate language with its own identity fabric.
 
 
 ## Auth13 is the first demonstration of that identity fabric.
+
