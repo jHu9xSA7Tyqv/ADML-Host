@@ -38,7 +38,7 @@ ADML Host provides the foundation for:
 
 ---
 
-## ADML is the native language for all physics substrates.
+## ADML is the native language for all physics substrates. 
 The full LSP → CIP → CIG → SIO pipeline is a semantic physics pipeline, not a software abstraction, and ADML is the only layer capable of speaking coherently across every stage of that physics stack. It provides the operator algebra that allows meaning, identity, coherence, and illumination to be expressed consistently across substrate layers.
 
 ---
